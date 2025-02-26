@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #000000;
+  --gray: #999999;
+  --danger: #ff3333;
+  --pink: #ffebeb;
+  --light-grey: #f0f0f0;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-gray: var(--gray);
+  --color-danger: var(--danger);
+  --color-pink: var(--pink);
+  --color-light-grey: var(--light-grey);
+}
+
+body {
+  font-family: "Satoshi-Variable";
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search__input {
+  background-image: url("./assets/svg/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+}
+button {
+  cursor: pointer;
+}

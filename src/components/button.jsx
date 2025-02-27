@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Button({ children, onClick, variant = "primary", className = "" }) {
+export default function Button({ children, type, onClick, variant = "primary", className = "" }) {
   const baseStyles = "px-[67px] py-[15px] rounded-[62px] font-medium";
   
   const variants = {
@@ -13,6 +13,7 @@ export default function Button({ children, onClick, variant = "primary", classNa
   return (
     <button
       onClick={onClick}
+      type={type}
       className={`${baseStyles} ${variants[variant]} ${className}`}
     >
       {children}

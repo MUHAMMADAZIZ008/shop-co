@@ -36,3 +36,53 @@ body {
 button {
   cursor: pointer;
 }
+.style_box {
+  background-image: url('./assets/style_img1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+.style_box:nth-child(2){
+  background-image: url('./assets/style_img2.png');
+}
+.style_box:nth-child(3){
+  background-image: url('./assets/style_img3.png');
+}
+.style_box:nth-child(4){
+  background-image: url('./assets/style_img4.png');
+}
+
+.style_wrapper {
+  position: relative;
+}
+
+.mySwiper {
+  padding: 40px 0 !important;
+  position: static  ;
+}
+.swiper-button-prev {
+  top: 10px !important;
+  left: 90% !important;
+  position: absolute !important;
+  background-image: url('./assets/svg/left-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.swiper-button-next {
+  background-image: url('./assets/svg/right-icon.svg');
+  top: 10px !important;
+  left: 95% !important;
+  position: absolute !important;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: '' !important;
+}
+.footer__input {
+  background-image: url('./assets/mail-icon.png');
+  background-repeat: no-repeat;
+  background-position: 7%;
+}
+

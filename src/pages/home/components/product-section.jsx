@@ -4,8 +4,8 @@ import Button from "../../../components/button";
 
 const ProductSection = ({className ,title, data }) => {
   return (
-    <section className={`pt-[72px] pb-[64px]`}>
-      <div className="container">
+    <section className={`pt-[72px]`}>
+      <div className={`container ${className} pb-[64px]`}>
         <h2 className="text-primary mb-[55px] text-[48px] font-extrabold text-center">
           {title}
         </h2>

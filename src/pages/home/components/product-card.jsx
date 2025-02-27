@@ -14,7 +14,13 @@ const ProductCard = ({ item }) => {
           {item.rating} <span className="text-gray">/5</span>
         </p>
       </div>
-      <p className="font-bold text-[24px]">{item.price} $</p>
+      <div className="flex text-primary items-center gap-[10px]">
+        <p className="font-bold text-[24px]">${item.price}</p>
+        {item.discount ? <div className="flex items-center gap-[10px]">
+          <p className="font-bold text-[24px] line-through text-gray">${item.oldPrice}</p>
+          <span className="px-[14px] py-[7px] bg-pink rounded-[62px] text-danger text-[12px]">{item.discount}</span>
+        </div> : ""}
+      </div>
     </div>
   );
 };

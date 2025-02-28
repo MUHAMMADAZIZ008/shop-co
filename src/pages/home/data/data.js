@@ -6,7 +6,8 @@ export const data = [
         img: productImg1,
         name: 'T-SHIRT WITH TAPE DETAILS',
         rating: 4.5,
-        price: 120
+        price: 120,
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 2,
@@ -15,14 +16,16 @@ export const data = [
         rating: 3.5,
         price: 240,
         oldPrice: 260,
-        discount: '20%'
+        discount: '20%',
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 3,
         img: productImg1,
         name: 'CHECKERED SHIRT',
         rating: 4.5,
-        price: 180
+        price: 180,
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ export const data = [
         rating: 4.5,
         price: 130,
         oldPrice: 160,
-        discount: '30%'
+        discount: '30%',
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 5,
@@ -40,30 +44,35 @@ export const data = [
         rating: 5.0,
         price: 212,
         oldPrice: 232,
-        discount: '20%'
+        discount: '20%',
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 6,
         img: productImg1,
         name: 'COURAGE GRAPHIC T-SHIRT',
         rating: 4.0,
-        price: 145
+        price: 145,
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 7,
         img: productImg1,
         name: 'LOOSE FIT BERMUDA SHORTS',
         rating: 3.0,
-        price: 80
+        price: 80,
+        colors: ['#4f4631', '#314f4a', '#31344f']
     },
     {
         id: 8,
         img: productImg1,
         name: 'FADED SKINNY JEANS',
         rating: 4.5,
-        price: 210
+        price: 210,
+        colors: ['#4f4631', '#314f4a', '#31344f']
     }
 ];
+
 
 export const comments = [
     {

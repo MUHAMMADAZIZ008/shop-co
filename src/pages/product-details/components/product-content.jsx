@@ -89,7 +89,7 @@ const ProductContent = () => {
             <p className="mb-[16px] text-gray">Choose Size</p>
             <div className="flex items-center gap-[12px]">
               {product?.sizes?.map((item, index) => (
-                <ChooseSize key={index} size={item} />
+                <ChooseSize key={index} size={item} id={index}/>
               ))}
             </div>
           </div>

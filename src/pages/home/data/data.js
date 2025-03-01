@@ -8,7 +8,8 @@ export const data = [
         rating: 4.5,
         price: 120,
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 2
     },
     {
         id: 2,
@@ -19,7 +20,8 @@ export const data = [
         oldPrice: 260,
         discount: '20%',
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 5
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ export const data = [
         rating: 4.5,
         price: 180,
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 3
     },
     {
         id: 4,
@@ -39,7 +42,8 @@ export const data = [
         oldPrice: 160,
         discount: '30%',
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 7
     },
     {
         id: 5,
@@ -50,7 +54,8 @@ export const data = [
         oldPrice: 232,
         discount: '20%',
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 1
     },
     {
         id: 6,
@@ -59,7 +64,8 @@ export const data = [
         rating: 4.0,
         price: 145,
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 4
     },
     {
         id: 7,
@@ -68,7 +74,8 @@ export const data = [
         rating: 3.0,
         price: 80,
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 6
     },
     {
         id: 8,
@@ -77,9 +84,11 @@ export const data = [
         rating: 4.5,
         price: 210,
         colors: ['#4f4631', '#314f4a', '#31344f'],
-        sizes: ['Small', 'Medium', 'Large', 'X-Large']
+        sizes: ['Small', 'Medium', 'Large', 'X-Large'],
+        count: 8
     }
 ];
+
 
 
 export const comments = [

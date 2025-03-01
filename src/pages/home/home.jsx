@@ -7,10 +7,7 @@ import prada from "../../assets/prada.png";
 import calvin from "../../assets/calvin.png";
 import ProductSection from "./components/product-section";
 import { data } from "./data/data";
-import styleImg1 from '../../assets/style_img1.png'
-import styleImg2 from '../../assets/style_img2.png'
-import styleImg3 from '../../assets/style_img3.png'
-import styleImg4 from '../../assets/style_img4.png'
+
 import { CostumersComment } from "./components/costumers-comment";
 
 const data1 = [];

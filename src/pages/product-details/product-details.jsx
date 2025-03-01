@@ -4,7 +4,7 @@ import ProductContent from './components/product-content'
 
 const ProductDetails = () => {
   return (
-    <section className='border-2 border-t-gray pt-[82px] pb-[200px]'>
+    <section className='border-t-2 border-t-gray pt-[82px] pb-[200px]'>
         <div className="container">
             <ProductContent />
         </div>

@@ -3,8 +3,13 @@ import { useParams } from "react-router-dom";
 import { data } from "../../home/data/data";
 import Rating from "../../home/components/rating";
 import ProductColor from "./product-color";
+import ChooseSize from "./choose-size";
+import minusIcon from "../../../assets/svg/minus-icon.svg";
+import plusIcon from "../../../assets/svg/plus-icon.svg";
+import Button from "../../../components/button";
 
 const ProductContent = () => {
+  const [count, setCount] = useState(0);
   const [product, setProduct] = useState({});
   const { id } = useParams();
   useEffect(() => {
@@ -14,6 +19,13 @@ const ProductContent = () => {
       }
     });
   }, []);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+  const decrement = () => {
+    if (count > 0) setCount(count - 1);
+  };
 
   return (
     <div>
@@ -65,13 +77,41 @@ const ProductContent = () => {
             a soft and breathable fabric, it offers superior comfort and style.
           </p>
 
-          <div>
+          <div className="mb-[24px] pb-[24px] border-b-2 border-b-gray">
             <p className="mb-[16px] text-gray">Select Colors</p>
             <div className="flex items-center gap-[16px]">
               {product?.colors?.map((item, index) => (
                 <ProductColor key={index} color={item} />
               ))}
             </div>
+          </div>
+          <div className="mb-[24px] pb-[24px] border-b-2 border-b-gray">
+            <p className="mb-[16px] text-gray">Choose Size</p>
+            <div className="flex items-center gap-[12px]">
+              {product?.sizes?.map((item, index) => (
+                <ChooseSize key={index} size={item} />
+              ))}
+            </div>
+          </div>
+          <div className="flex items-center gap-[20px]">
+            <div className="flex items-center h-[52px]">
+              <button
+                onClick={decrement}
+                className="text-primary flex items-center justify-baseline h-full pl-[20px] bg-light-grey rounded-tl-[62px] rounded-bl-[62px]"
+              >
+                <img src={minusIcon} alt="" />
+              </button>
+              <p className="h-full px-[38px] flex items-center justify-baseline text-[18px] font-semibold bg-light-grey">
+                {count}
+              </p>
+              <button
+                onClick={increment}
+                className="text-primary flex items-center justify-baseline h-full pr-[20px] bg-light-grey rounded-tr-[62px] rounded-br-[62px]"
+              >
+                <img src={plusIcon} alt="" />
+              </button>
+            </div>
+            <Button className="grow" variant="primary">Add to Cart</Button>
           </div>
         </div>
       </div>

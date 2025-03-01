@@ -1,5 +1,6 @@
 import productImg1 from '../../../assets/product-img1.png'
 
+
 export const data = [
     {
         id: 1,
@@ -7,7 +8,7 @@ export const data = [
         name: 'T-SHIRT WITH TAPE DETAILS',
         rating: 4.5,
         price: 120,
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 2
     },
@@ -19,7 +20,7 @@ export const data = [
         price: 240,
         oldPrice: 260,
         discount: '20%',
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 5
     },
@@ -29,7 +30,7 @@ export const data = [
         name: 'CHECKERED SHIRT',
         rating: 4.5,
         price: 180,
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 3
     },
@@ -41,7 +42,7 @@ export const data = [
         price: 130,
         oldPrice: 160,
         discount: '30%',
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy', 'Black'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 7
     },
@@ -53,7 +54,7 @@ export const data = [
         price: 212,
         oldPrice: 232,
         discount: '20%',
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 1
     },
@@ -63,7 +64,7 @@ export const data = [
         name: 'COURAGE GRAPHIC T-SHIRT',
         rating: 4.0,
         price: 145,
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 4
     },
@@ -73,7 +74,7 @@ export const data = [
         name: 'LOOSE FIT BERMUDA SHORTS',
         rating: 3.0,
         price: 80,
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 6
     },
@@ -83,7 +84,7 @@ export const data = [
         name: 'FADED SKINNY JEANS',
         rating: 4.5,
         price: 210,
-        colors: ['#4f4631', '#314f4a', '#31344f'],
+        colors: ['Brown', 'Teal', 'Navy'],
         sizes: ['Small', 'Medium', 'Large', 'X-Large'],
         count: 8
     }

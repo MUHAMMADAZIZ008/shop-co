@@ -12,6 +12,10 @@ const ProductContent = () => {
   const [count, setCount] = useState(0);
   const [product, setProduct] = useState({});
   const { id } = useParams();
+
+  const [selectedSize, setSelectedSize] = useState(null);
+  const [selectedColor, setSelectedColor] = useState(null);
+
   useEffect(() => {
     data.map((item) => {
       if (item.id === +id) {
@@ -81,7 +85,13 @@ const ProductContent = () => {
             <p className="mb-[16px] text-gray">Select Colors</p>
             <div className="flex items-center gap-[16px]">
               {product?.colors?.map((item, index) => (
-                <ProductColor key={index} color={item} />
+                <ProductColor
+                  key={index}
+                  color={item}
+                  id={index}
+                  onChange={setSelectedColor}
+                  selectedColor={selectedColor}
+                />
               ))}
             </div>
           </div>
@@ -89,7 +99,13 @@ const ProductContent = () => {
             <p className="mb-[16px] text-gray">Choose Size</p>
             <div className="flex items-center gap-[12px]">
               {product?.sizes?.map((item, index) => (
-                <ChooseSize key={index} size={item} id={index}/>
+                <ChooseSize
+                  key={index}
+                  selectedSize={selectedSize}
+                  onSelect={setSelectedSize}
+                  size={item}
+                  id={index}
+                />
               ))}
             </div>
           </div>
@@ -111,7 +127,9 @@ const ProductContent = () => {
                 <img src={plusIcon} alt="" />
               </button>
             </div>
-            <Button className="grow" variant="primary">Add to Cart</Button>
+            <Button className="grow" variant="primary">
+              Add to Cart
+            </Button>
           </div>
         </div>
       </div>

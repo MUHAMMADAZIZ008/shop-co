@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createReducer, createSlice } from "@reduxjs/toolkit";
 
 
 
@@ -10,7 +10,7 @@ const initialState = {
     total: 0,
     products: [],
     deliveryFee: 0,
-    productCount: 0
+    productCount: 0,
 }
 
 const cerateReducerCart = createSlice({
@@ -22,11 +22,19 @@ const cerateReducerCart = createSlice({
             if (!currentProduct) {
                 return {
                     ...state,
-                    products: [...state.products, {
-                        ...action.payload
-                    }]
+                    products: [
+                        ...state.products,
+                        {
+                            ...action.payload,
+                            viewCount: 1,
+                            count: action.payload.count - 1,
+                        }]
                 }
             }
+            return state
         }
     }
 })
+
+export default cerateReducerCart.reducer
+export const { addToCart } = cerateReducerCart.actions

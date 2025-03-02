@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { data } from "../../home/data/data";
 import Rating from "../../home/components/rating";
@@ -8,7 +9,11 @@ import minusIcon from "../../../assets/svg/minus-icon.svg";
 import plusIcon from "../../../assets/svg/plus-icon.svg";
 import Button from "../../../components/button";
 
+import { addToCart, productIncrement } from "../../../store/slices/addToCart";
+
 const ProductContent = () => {
+  const dispatch = useDispatch();
+
   const [count, setCount] = useState(0);
   const [product, setProduct] = useState({});
   const { id } = useParams();
@@ -29,6 +34,9 @@ const ProductContent = () => {
   };
   const decrement = () => {
     if (count > 0) setCount(count - 1);
+  };
+  const addToCartButton = () => {    
+    dispatch(addToCart({ ...product, selectedColor, selectedSize }));
   };
 
   return (
@@ -127,7 +135,11 @@ const ProductContent = () => {
                 <img src={plusIcon} alt="" />
               </button>
             </div>
-            <Button className="grow" variant="primary">
+            <Button
+              onClick={addToCartButton}
+              className="grow"
+              variant="primary"
+            >
               Add to Cart
             </Button>
           </div>

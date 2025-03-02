@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import BasketIcon from "../assets/svg/basket-icon.svg";
 import ProfileIcon from "../assets/svg/profile-icon.svg";
 import SearchIcon from "../assets/svg/search-icon2.svg";
+import { useSelector } from "react-redux";
 
 export const Header = () => {
+  const {products, productCount} = useSelector((state) => state.product)
+  
   return (
     <div>
       <div className="bg-primary p-[10px] text-center">
@@ -21,7 +24,8 @@ export const Header = () => {
           {/* <Link to={"/"}>
             <img src={SearchIcon} alt="" />
           </Link> */}
-          <Link to={"/"}>
+          <Link to={"/cart"} className="relative w-[24px] h-[24px]">
+            <p className="absolute -top-[10px] -right-3 w-[20px] h-[20px] text-[11px] flex items-center justify-center text-white bg-red-500 rounded-full">{productCount}</p>
             <img src={BasketIcon} alt="" />
           </Link>
           <Link to={"/"}>

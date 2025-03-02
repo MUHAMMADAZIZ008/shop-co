@@ -6,7 +6,9 @@ export const Search = () => {
   return (
     <div className="flex items-center gap-[40px]">
       <div>
-        <img src={logo} alt="img" />
+        <Link to={'/'}>
+          <img src={logo} alt="img" />
+        </Link>
       </div>
       {/* md:flex md:items-center md:gap-10 */}
 

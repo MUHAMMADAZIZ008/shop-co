@@ -47,11 +47,12 @@ export const Home = () => {
         </section>
         <section>
           <ProductSection
+            key={"section1"}
             className={"border-b border-b-[#999]]"}
             title={"NEW ARRIVALS"}
             data={data1}
           />
-          <ProductSection title={"TOP SELLING"} data={data2} />
+          <ProductSection key={"section1"} title={"TOP SELLING"} data={data2} />
         </section>
         <section>
           <div className="container py-[73px] bg-[#f0f0f0] rounded-[40px]">
@@ -60,19 +61,27 @@ export const Home = () => {
             </h2>
             <div className="grid grid-cols-3 grid-rows-[289px_289px] gap-[20px]">
               <div className="bg-white style_box overflow-hidden relative rounded-[20px] pt-[25px] pl-[36px]">
-                <h3 className="text-primary text-[36px] z-10 font-extrabold">Casual</h3>
+                <h3 className="text-primary text-[36px] z-10 font-extrabold">
+                  Casual
+                </h3>
                 {/* <img className="absolute top-0 right-0 z-0 h-[100%]" src={styleImg1} alt="img" /> */}
               </div>
               <div className="bg-white style_box overflow-hidden relative rounded-[20px] col-span-2 pt-[25px] pl-[36px]">
-                <h3 className="text-primary text-[36px] z-10 font-extrabold">Formal</h3>
+                <h3 className="text-primary text-[36px] z-10 font-extrabold">
+                  Formal
+                </h3>
                 {/* <img className="absolute top-0 right-0 z-0 h-[100%]" src={styleImg2} alt="img" /> */}
               </div>
               <div className="bg-white style_box overflow-hidden relative rounded-[20px] col-span-2 pt-[25px] pl-[36px]">
-                <h3 className="text-primary text-[36px] z-10 font-extrabold">Party</h3>
+                <h3 className="text-primary text-[36px] z-10 font-extrabold">
+                  Party
+                </h3>
                 {/* <img className="absolute top-0 right-0 z-0 h-[100%]" src={styleImg3} alt="img" /> */}
               </div>
               <div className="bg-white style_box overflow-hidden relative rounded-[20px] pt-[25px] pl-[36px]">
-                <h3 className="text-primary text-[36px] z-10 font-extrabold">Gym</h3>
+                <h3 className="text-primary text-[36px] z-10 font-extrabold">
+                  Gym
+                </h3>
                 {/* <img className="absolute top-0 right-0 z-0 h-[100%]" src={styleImg4} alt="img" /> */}
               </div>
             </div>
